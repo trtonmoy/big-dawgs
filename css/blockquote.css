@@ -1,0 +1,36 @@
+.rkit-blockquote{
+    display: flex;
+    position: relative;
+}
+
+.blockquote-top{
+    flex-direction: column;
+}
+
+.rkit-quote-icon{
+    font-size: 4rem;
+}
+
+.blockquote-top .rkit-quote-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockquote-inline .rkit-quote-icon {
+    float: left;
+    line-height: 1em;
+    width: 1em;
+    height: 1em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 .5em 0 0;
+}
+
+.blockquote-absolute .rkit-quote-icon {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

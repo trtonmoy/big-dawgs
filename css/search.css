@@ -1,0 +1,17 @@
+.rkit-search-button{
+    background-color:rgb(203, 203, 203);
+    padding: 16px;
+    aspect-ratio: 1/1;
+}
+
+.rkit-search-input{
+    outline: none;
+}
+
+.rkit-search-input:focus {
+    outline: none;
+}
+
+.rkit-search{
+    overflow: hidden;
+}

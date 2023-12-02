@@ -1,0 +1,61 @@
+.rkit-accordion {
+    display: flex;
+    flex-direction: column;
+}
+.rkit-accordion-header {
+    padding: 10px;
+    background-color: #ebebeb;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.rkit-accordion-item.open .rkit-accordion-header{
+    color: rgb(1, 57, 242);
+}
+
+.rkit-accordion-content {
+    max-height: 0vmax;
+    height: auto;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.rkit-accordion__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rkit-accordion__title{
+    width:100%;
+    text-align: left;
+}
+
+.rkit-accordion__content{
+    padding: 0.5rem;
+    text-align: justify;
+}
+
+.rkit-accordion-item.open .rkit-accordion-content {
+    visibility: visible;
+    max-height: 100vmax;
+    transition: all 1.5s;
+}
+
+
+.rkit-accordion-item .rkit-accordion__icon .icon_open {
+    display: none;
+}
+
+.rkit-accordion-item.open .rkit-accordion__icon .icon_close {
+    display: none;
+}
+
+.rkit-accordion-item.open .rkit-accordion__icon .icon_open {
+    display: block;
+}

@@ -1,0 +1,100 @@
+.rkit-cta {
+    overflow: hidden;
+}
+
+.rkit-cta-container-classic {
+    display: flex;
+}
+
+.rkit-cta-container-cover {
+    display: block;
+}
+
+.rkit-cta-img__wrapper {
+    background-size: cover;
+    background-position: 50%;
+    min-width: 50%;
+    position: relative;
+}
+
+.rkit-cta-container-cover .rkit-cta-img__wrapper {
+    min-height: 350px
+}
+
+.rkit-cta-container-classic .rkit-cta-img__wrapper {
+    min-height: 350px
+}
+
+
+.rkit-cta-container-cover .rkit-cta-content__wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.rkit-cta-description {
+    margin-bottom: 1rem;
+}
+
+.rkit-cta-container-classic .rkit-cta-content__wrapper {
+    min-height: 350px;
+}
+
+.rkit-cta-ribbon {
+    position: absolute;
+    top: 0;
+    background-color: yellowgreen;
+    padding-inline: 25px;
+    padding-block: 10px;
+    z-index: 2;
+    margin-right: 1rem;
+    margin-top: -5px;
+}
+
+.rkit-cta-content__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rkit-cta-container-classic .rkit-cta-content__wrapper {
+    background-color: white;
+}
+
+.rkit-cta div , .rkit-cta .rkit-cta-title {
+    transition: all 0.5s;
+}
+
+.rkit-cta-img__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+}
+
+.rkit-cta:hover .rkit-cta-img__overlay {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.rkit-cta-icon__graphic_element{
+    font-size: 70px;
+}
+.rkit-cta__graphic_element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.rkit-cta__graphic_element:has(.rkit-cta-icon__graphic_element){
+    aspect-ratio: 1/1;
+}
+
+.rkit-cta-text{
+    display: flex;
+    flex-direction: column;
+}
